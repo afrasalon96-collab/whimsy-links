@@ -16,12 +16,13 @@ body {
   min-height: 100vh;
   font-family: Arial, sans-serif;
   background:
-    radial-gradient(circle at 50% 40%, #4b1015, #16090c 75%);
+    radial-gradient(ellipse at 50% 35%, #671c24 0%, #300e14 45%, #10090b 100%);
   color: white;
   display: flex;
-  justify-content: center;
   align-items: center;
-  padding: 25px;
+  justify-content: center;
+  padding: 30px 22px;
+  overflow-x: hidden;
 }
 
 .container {
@@ -31,65 +32,71 @@ body {
 }
 
 .logo {
-  width: 100%;
-  border-radius: 15px;
-  margin-bottom: 20px;
-}
-
-.character {
-  width: 210px;
-  max-width: 70%;
+  width: 230px;
+  max-width: 75%;
   height: auto;
   object-fit: contain;
-  margin: 5px auto 22px;
+  margin: 0 auto 5px;
   display: block;
 }
 
-h2 {
-  font-size: 22px;
-  letter-spacing: 2px;
-  margin-bottom: 10px;
+.character {
+  width: 220px;
+  max-width: 75%;
+  height: 220px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 12px;
+  filter: drop-shadow(0 15px 22px #0008);
 }
 
-p {
-  color: #d9bfc1;
+h2 {
+  font-size: 23px;
+  letter-spacing: 3px;
+  margin: 10px 0;
+}
+
+.description {
+  color: #e3c6c8;
   font-size: 14px;
-  margin-bottom: 28px;
+  margin-bottom: 30px;
+  line-height: 2;
 }
 
 .button {
   display: flex;
-  align-items: center;
   justify-content: center;
-  gap: 12px;
+  align-items: center;
   width: 100%;
   padding: 17px;
   margin: 15px 0;
-  border-radius: 14px;
+  border-radius: 16px;
   text-decoration: none;
   color: white;
   font-size: 16px;
   font-weight: bold;
-  transition: 0.2s;
+  letter-spacing: 1.5px;
+  transition: .2s;
+  box-shadow: 0 8px 22px #0005;
 }
 
 .telegram {
-  background: #229ED9;
+  background: linear-gradient(135deg, #36b8ed, #1475ad);
 }
 
 .rubika {
-  background: #e32636;
+  background: linear-gradient(135deg, #fa4652, #b91429);
 }
 
 .button:active {
-  transform: scale(0.96);
+  transform: scale(.96);
 }
 
 .footer {
-  color: #9d777b;
+  color: #bd969a;
   font-size: 11px;
   margin-top: 35px;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
 }
 </style>
 </head>
@@ -97,26 +104,35 @@ p {
 <body>
 <div class="container">
 
-  <img src="logo.png" class="logo" alt="WHIMSY">
+  <img
+    src="grok_1793711862000.jpg"
+    class="logo"
+    alt="WHIMSY">
 
-  <img src="whimsy.png" class="character" alt="Whimsy">
+  <img
+    src="1794414712086.png"
+    class="character"
+    alt="Whimsy">
 
   <h2>WELCOME TO WHIMSY</h2>
-  <p>برای ارتباط با ما، یکی از راه‌های زیر را انتخاب کنید</p>
+
+  <div class="description">
+    برای ارتباط با ما، یکی از راه‌های زیر را انتخاب کنید
+  </div>
 
   <a class="button telegram"
      href="https://t.me/WHIMSY_WORLD"
      target="_blank">
-     TELEGRAM
+    TELEGRAM
   </a>
 
   <a class="button rubika"
      href="https://rubika.ir/WHIMSY_WORLD"
      target="_blank">
-     RUBIKA
+    RUBIKA
   </a>
 
-  <div class="footer">WHIMSY WORLD © 2026</div>
+  <div class="footer">WHIMSY WORLD</div>
 
 </div>
 </body>

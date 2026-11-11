@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WHIMSY WORLD</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background:
+    radial-gradient(circle at 50% 40%, #4b1015, #16090c 75%);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+}
+
+.container {
+  width: 100%;
+  max-width: 390px;
+  text-align: center;
+}
+
+.logo {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.character {
+  width: 210px;
+  max-width: 70%;
+  height: auto;
+  object-fit: contain;
+  margin: 5px auto 22px;
+  display: block;
+}
+
+h2 {
+  font-size: 22px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #d9bfc1;
+  font-size: 14px;
+  margin-bottom: 28px;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+  padding: 17px;
+  margin: 15px 0;
+  border-radius: 14px;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.telegram {
+  background: #229ED9;
+}
+
+.rubika {
+  background: #e32636;
+}
+
+.button:active {
+  transform: scale(0.96);
+}
+
+.footer {
+  color: #9d777b;
+  font-size: 11px;
+  margin-top: 35px;
+  letter-spacing: 2px;
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+  <img src="logo.png" class="logo" alt="WHIMSY">
+
+  <img src="whimsy.png" class="character" alt="Whimsy">
+
+  <h2>WELCOME TO WHIMSY</h2>
+  <p>برای ارتباط با ما، یکی از راه‌های زیر را انتخاب کنید</p>
+
+  <a class="button telegram"
+     href="https://t.me/WHIMSY_WORLD"
+     target="_blank">
+     TELEGRAM
+  </a>
+
+  <a class="button rubika"
+     href="https://rubika.ir/WHIMSY_WORLD"
+     target="_blank">
+     RUBIKA
+  </a>
+
+  <div class="footer">WHIMSY WORLD © 2026</div>
+
+</div>
+</body>
+</html>
